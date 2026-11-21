@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Petros Oratiou is a software engineer building complete, reliable web applications."
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Petros Oratiou — Software Engineer</title>
+  </head>
+  <body class="bg-black-pearl text-arctic-paradise">
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-arctic-paradise/10 bg-black-pearl/75 backdrop-blur-md"
+    >
+      <nav
+        aria-label="Main navigation"
+        class="mx-auto flex w-[calc(100%-32px)] max-w-270 flex-col justify-between gap-3 py-3 text-nav text-arctic-paradise sm:flex-row sm:items-center"
+      >
+        <a
+          class="nav-link w-fit font-semibold"
+          href="#home"
+          data-nav-link
+          data-section="home"
+          aria-current="location"
+          >Petros Oratiou.</a
+        >
+        <div class="flex flex-wrap gap-x-5 gap-y-1 sm:gap-x-8">
+          <a
+            class="nav-link"
+            href="#about-heading"
+            data-nav-link
+            data-section="about"
+            >About me</a
+          >
+          <a
+            class="nav-link"
+            href="#experience-heading"
+            data-nav-link
+            data-section="experience"
+            >Experience &amp; Projects</a
+          >
+          <a
+            class="nav-link"
+            href="#tech-stack-heading"
+            data-nav-link
+            data-section="tech-stack"
+            >Tech Stack</a
+          >
+          <a
+            class="nav-link"
+            href="#contact-heading"
+            data-nav-link
+            data-section="contact"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="home"
+        class="relative isolate flex min-h-svh w-full items-center overflow-hidden"
+      >
+        <img
+          class="absolute inset-0 -z-20 h-full w-full object-cover object-center"
+          src="/hero.png"
+          alt=""
+          fetchpriority="high"
+        />
+        <div
+          class="absolute inset-0 -z-10 bg-linear-to-r from-black-pearl/98 from-0% via-black-pearl/90 via-45% to-black-pearl/70 to-100% sm:from-black-pearl/95 sm:via-black-pearl/75 sm:via-35% sm:to-transparent sm:to-75%"
+        ></div>
+        <div
+          class="relative z-0 mx-auto w-[calc(100%-48px)] max-w-270 py-36 text-arctic-paradise sm:py-32"
+        >
+          <div class="max-w-lg space-y-6">
+            <p class="text-eyebrow font-semibold uppercase">
+              Petros Oratiou / Software Engineer
+            </p>
+            <h1 class="text-display font-light">
+              Bring your <span class="text-arctic-paradise">ideas</span> to
+              life.
+            </h1>
+            <p class="text-copy">
+              I build complete web applications, from backend architecture and
+              databases to polished frontend experiences. Have a project in
+              mind? Let's talk.
+            </p>
+            <div class="flex flex-wrap gap-x-6 gap-y-3">
+              <a
+                class="inline-flex h-12 items-center rounded-full bg-emberust px-4 font-bold text-arctic-paradise transition-all hover:-translate-y-1 hover:bg-seashell-cove"
+                href="#contact-heading"
+                >Get in touch</a
+              >
+              <a
+                class="inline-flex h-12 items-center border-b border-blue-splash"
+                href="#about-heading"
+                >About me</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          class="absolute bottom-6 left-1/2 z-10 inline-flex -translate-x-1/2 items-center gap-2 whitespace-nowrap text-sm text-arctic-paradise/55 transition-colors hover:text-arctic-paradise/80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-arctic-paradise"
+          href="#about-heading"
+        >
+          <span>Scroll down to explore</span>
+          <span aria-hidden="true" class="text-lg leading-none">↓</span>
+        </a>
+      </section>
+
+      <section
+        id="about"
+        class="border-t border-arctic-paradise/10 bg-black-pearl px-6 py-24 sm:py-32"
+      >
+        <div class="mx-auto max-w-270">
+          <h2 id="about-heading" class="section-heading text-display mb-6 font-light">
+            About me
+          </h2>
+          <p class="text-copy max-w-3xl text-arctic-paradise/80">
+            I'm a software engineer with experience developing and modernizing
+            web applications across a range of industries. I've contributed to
+            enterprise platforms in digital banking, government services, and
+            financial compliance, working on systems where reliability,
+            scalability, and maintainability matter.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="border-t border-arctic-paradise/10 bg-seashell-cove/25 px-6 py-24 sm:py-32"
+      >
+        <div class="mx-auto max-w-270">
+          <h2
+            id="experience-heading"
+            class="section-heading text-display mb-12 font-light"
+          >
+            Experience &amp; Projects
+          </h2>
+          <div class="divide-y divide-arctic-paradise/15">
+            <article class="py-8 first:pt-0">
+              <p class="text-eyebrow font-semibold uppercase text-blue-splash">
+                Software Engineer — Datatech
+              </p>
+              <h3 class="mt-3 text-2xl font-semibold">eOASIS</h3>
+              <p class="text-copy mt-3 max-w-3xl text-arctic-paradise/80">
+                Modernized eOASIS, an electronic government archive and
+                departmental communication platform used by the Republic of
+                Cyprus.
+              </p>
+              <a
+                class="mt-4 inline-flex min-h-11 items-center rounded-full bg-seashell-cove px-5 py-2 font-semibold text-arctic-paradise transition-colors hover:bg-blue-splash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-arctic-paradise"
+                href="https://www.mof.gov.cy/mof/papd/papd.nsf/eoasis_gr/eoasis_gr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit product information page</a
+              >
+            </article>
+            <article class="py-8">
+              <p class="text-eyebrow font-semibold uppercase text-blue-splash">
+                Software Engineer — NETinfo
+              </p>
+              <h3 class="mt-3 text-2xl font-semibold">
+                NETinfo Digital Banking Platform
+              </h3>
+              <p class="text-copy mt-3 max-w-3xl text-arctic-paradise/80">
+                Rewrote the platform's frontend in React, contributing to the
+                modernization of a digital banking solution used by multiple
+                banking and financial institutions.
+              </p>
+              <a
+                class="mt-4 inline-flex min-h-11 items-center rounded-full bg-seashell-cove px-5 py-2 font-semibold text-arctic-paradise transition-colors hover:bg-blue-splash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-arctic-paradise"
+                href="https://netinfo.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit product website</a
+              >
+            </article>
+            <article class="py-8">
+              <p class="text-eyebrow font-semibold uppercase text-blue-splash">
+                Developer — MicrosatIT
+              </p>
+              <h3 class="mt-3 text-2xl font-semibold">AMLex365</h3>
+              <p class="text-copy mt-3 max-w-3xl text-arctic-paradise/80">
+                Integrated third-party APIs into an anti-money laundering
+                platform. Developed its KYC screening and ongoing monitoring
+                modules, as well as the internal API gateway.
+              </p>
+              <a
+                class="mt-4 inline-flex min-h-11 items-center rounded-full bg-seashell-cove px-5 py-2 font-semibold text-arctic-paradise transition-colors hover:bg-blue-splash focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-arctic-paradise"
+                href="https://www.amlex365.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit product website</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tech-stack"
+        class="border-t border-arctic-paradise/10 bg-black-pearl px-6 py-24 sm:py-32"
+      >
+        <div class="mx-auto max-w-270">
+          <h2
+            id="tech-stack-heading"
+            class="section-heading text-display mb-12 font-light"
+          >
+            Tech Stack
+          </h2>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <h3 class="mb-3 text-xl font-semibold text-blue-splash">
+                Backend
+              </h3>
+              <ul
+                class="grid list-disc gap-1 pl-5 text-copy text-arctic-paradise/80"
+              >
+                <li>.NET</li>
+                <li>C#</li>
+                <li>VB.NET</li>
+                <li>Node.js</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>Fastify</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-3 text-xl font-semibold text-blue-splash">
+                Frontend
+              </h3>
+              <ul
+                class="grid list-disc gap-1 pl-5 text-copy text-arctic-paradise/80"
+              >
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-3 text-xl font-semibold text-blue-splash">
+                Databases
+              </h3>
+              <ul
+                class="grid list-disc gap-1 pl-5 text-copy text-arctic-paradise/80"
+              >
+                <li>Microsoft SQL Server</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-3 text-xl font-semibold text-blue-splash">Tools</h3>
+              <ul
+                class="grid list-disc gap-1 pl-5 text-copy text-arctic-paradise/80"
+              >
+                <li>Git</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="border-t border-arctic-paradise/10 bg-seashell-cove/25 px-6 py-24 sm:py-32"
+      >
+        <div class="mx-auto grid max-w-270 gap-12 lg:grid-cols-2">
+          <div>
+            <h2
+              id="contact-heading"
+              class="section-heading text-display mb-6 font-light"
+            >
+              Contact
+            </h2>
+            <p class="text-copy mb-6 text-arctic-paradise/80">
+              Interested in working together or have a project in mind?
+            </p>
+            <a
+              class="text-copy border-b border-emberust pb-1 text-arctic-paradise hover:text-emberust"
+              href="mailto:petros.oratiou@outlook.com"
+              >petros.oratiou@outlook.com</a
+            >
+          </div>
+          <form
+            id="contact-form"
+            class="grid gap-5"
+          >
+            <label class="grid gap-2 text-sm font-semibold" for="subject"
+              >Subject
+              <input
+                class="rounded-lg border border-arctic-paradise/20 bg-black-pearl/60 px-4 py-3 font-normal outline-none focus:border-blue-splash"
+                id="subject"
+                required
+              />
+            </label>
+            <label class="grid gap-2 text-sm font-semibold" for="message"
+              >Message
+              <textarea
+                class="min-h-36 rounded-lg border border-arctic-paradise/20 bg-black-pearl/60 px-4 py-3 font-normal outline-none focus:border-blue-splash"
+                id="message"
+                required
+              ></textarea>
+            </label>
+            <button
+              class="inline-flex h-12 w-fit items-center rounded-full bg-emberust px-5 font-bold text-arctic-paradise transition-colors hover:bg-seashell-cove"
+              type="submit"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

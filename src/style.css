@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:root {
+  --black-pearl: #1b262c;
+  --seashell-cove: #0f4c75;
+  --blue-splash: #3282b8;
+  --arctic-paradise: #bbe1fa;
+  --emberust: #b86832;
+}
+
+@theme inline {
+  --color-black-pearl: var(--black-pearl);
+  --color-seashell-cove: var(--seashell-cove);
+  --color-blue-splash: var(--blue-splash);
+  --color-arctic-paradise: var(--arctic-paradise);
+  --color-emberust: var(--emberust);
+}
+
+@utility text-nav {
+  font-size: clamp(0.9rem, 0.82rem + 0.2vw, 1rem);
+  line-height: 1.5;
+}
+
+@utility text-eyebrow {
+  font-size: clamp(0.75rem, 0.68rem + 0.35vw, 0.95rem);
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+@utility text-display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 1.25rem + 5vw, 4.75rem);
+  line-height: 1.05;
+}
+
+@utility text-copy {
+  font-size: clamp(1rem, 0.9rem + 0.7vw, 1.3rem);
+  line-height: 1.55;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-block: 0.25rem;
+  transition: color 150ms ease;
+}
+
+.nav-link::after {
+  position: absolute;
+  inset-inline-start: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: var(--emberust);
+  content: "";
+  pointer-events: none;
+  transition: width 250ms ease;
+}
+
+.nav-link:hover {
+  color: var(--blue-splash);
+}
+
+.nav-link[aria-current="location"] {
+  color: var(--arctic-paradise);
+}
+
+.nav-link[aria-current="location"]::after {
+  width: 100%;
+}
+
+.section-heading {
+  scroll-margin-top: 9rem;
+}
+
+@media (min-width: 40rem) {
+  .section-heading {
+    scroll-margin-top: 4.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .nav-link::after {
+    transition: none;
+  }
+}
