@@ -16,11 +16,17 @@ html {
   --blue-splash: #3282b8;
   --arctic-paradise: #bbe1fa;
   --emberust: #b86832;
+  --seashell-surface: color-mix(
+    in srgb,
+    var(--seashell-cove) 25%,
+    var(--black-pearl)
+  );
 }
 
 @theme inline {
   --color-black-pearl: var(--black-pearl);
   --color-seashell-cove: var(--seashell-cove);
+  --color-seashell-surface: var(--seashell-surface);
   --color-blue-splash: var(--blue-splash);
   --color-arctic-paradise: var(--arctic-paradise);
   --color-emberust: var(--emberust);
@@ -83,6 +89,50 @@ html {
 
 .section-heading {
   scroll-margin-top: 9rem;
+}
+
+.wave-template {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.section-wave {
+  --wave-from: var(--black-pearl);
+  --wave-to: var(--black-pearl);
+
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 0;
+  height: clamp(3.5rem, 8vw, 6rem);
+  overflow: hidden;
+  background-color: var(--wave-from);
+}
+
+.section-wave--hero {
+  z-index: -1;
+  background-color: transparent;
+}
+
+.section-wave--to-surface {
+  --wave-to: var(--seashell-surface);
+}
+
+.section-wave--from-surface {
+  --wave-from: var(--seashell-surface);
+}
+
+.section-wave svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-wave__main {
+  color: var(--wave-to);
 }
 
 @media (min-width: 40rem) {
