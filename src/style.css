@@ -11,14 +11,14 @@ html {
 }
 
 :root {
-  --black-pearl: #1b262c;
-  --seashell-cove: #0f4c75;
-  --blue-splash: #3282b8;
-  --arctic-paradise: #bbe1fa;
-  --emberust: #b86832;
+  --black-pearl: #131d24;
+  --seashell-cove: #145b86;
+  --blue-splash: #62b9e8;
+  --arctic-paradise: #cfe9ff;
+  --emberust: #a04f24;
   --seashell-surface: color-mix(
     in srgb,
-    var(--seashell-cove) 25%,
+    var(--seashell-cove) 45%,
     var(--black-pearl)
   );
 }
